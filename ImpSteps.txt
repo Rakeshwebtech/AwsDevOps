@@ -1,0 +1,35 @@
+Steps for Vir Env
+	Open CMD
+		pip install pipenv
+		
+	Activate VirEnv
+		pipenv shell
+		
+	Install Packages
+		Pipenv pillow
+
+Reset DB
+python manage.py flush
+python manage.py createsuperuser
+python manage.py makemigrations
+python manage.py migrate
+
+Imp Docker Commands
+Docker Command: docker run -p 8000:80 rakesha/djangoblog
+Kubectl Command: kubectl run podname --image=rakesha/djangoblog
+command: docker run -p 8080:8080 rakesha/django_docker:1
+Now open browser and hit: localhost:8080
+This will work only on local host but if you want to do this is amazon ec2 or other cloud services for public access. Then make sure you connected to the running instance by executing below command.
+docker exec -it container_id sh
+Then install VIM editor apt-get update
+apt-get install vim
+Now Navigate to the settings.py file which is under django_project folder
+and edit "settings.py" file and add public IP to the "allowed host" and save and quit.
+Automatically server will restart and will be up and running. Now try with your public ip:8080 example: http://13.232.140.160:8080/
+
+
+pending
+saving pics to s3 bucket
+ingress | 2 pods to node 1 and 2 pods to node 2 &| delay when updating images
+use aws code deploy and aws container registry
+also replicate in azure devops

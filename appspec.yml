@@ -2,7 +2,7 @@ version: 0.0
 os: linux
 files:
   - source: deployment.yaml
-    destination: /root/
+    destination: /root/test
 hooks:
   BeforeInstall:
     - location: start_server

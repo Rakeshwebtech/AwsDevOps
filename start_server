@@ -1,2 +1,3 @@
 #!/bin/bash
-kubectl apply -f "/root/test/deployment.yaml"
+cd /root/test
+kubectl apply -f "deployment.yaml"

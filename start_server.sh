@@ -1,2 +1,2 @@
 #!/bin/bash
-kubectl apply -f "/var/www/yaml/deployment.yaml"
+kubectl apply -f "/root/destination/directory/deployment.yaml"

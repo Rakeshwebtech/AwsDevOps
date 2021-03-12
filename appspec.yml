@@ -1,7 +1,7 @@
 version: 0.0
 os: linux
 files:
-  - source: deployment.yaml
+  - source: /deployment.yaml
     destination: /root/test
 hooks:
   BeforeInstall:
